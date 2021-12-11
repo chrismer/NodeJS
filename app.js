@@ -15,9 +15,7 @@ class Usuario {
     }
 
     countMascotas() {
-        this.mascotas.forEach(mascota => {
-            console.log(mascota.length);
-        });
+        return this.mascotas.length;
     }
 
     addBook(book) {
@@ -37,13 +35,11 @@ class Usuario {
 }
 
 const usuario1 = new Usuario('Juan', 'Perez', [], []);
-const usuario2 = new Usuario('Pedro', 'Gomez', [], []);
 console.log(usuario1.getFullName());
-usuario1.addMascotas(['Perro', 'Gato', 'Conejo']);
+usuario1.addMascotas('Perro');
+usuario1.addMascotas('Caballo');
+usuario1.addMascotas('Gato');
 console.log(usuario1.countMascotas());
 usuario1.addBook({nombre: 'El señor de los anillos', autor: 'J.R.R. Tolkien'});
-// usuario1.getBooksName();
-usuario1.addBook({nombre: 'Dracula', autor: 'Bram Stoker'});
-// usuario1.getBooksName();
 usuario1.addBook({nombre: 'El principito', autor: 'Antoine de Saint-Exupéry'});
 usuario1.getBooksName();
