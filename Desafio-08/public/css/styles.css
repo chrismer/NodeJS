@@ -1,0 +1,42 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+.form{
+    width: 400px;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+.campos{
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.campo{
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.send{
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
